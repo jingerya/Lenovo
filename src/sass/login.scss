@@ -1,0 +1,141 @@
+@import 'public';
+*{margin: 0;padding: 0;}
+#banner{
+	@include wh(100%,50px);
+	// background: pink;
+	img{
+		float: left;
+	}
+	ul{
+		float: left;
+		li{
+			list-style: none;
+			float: left;
+			line-height: 50px;
+			margin-left: 26px;
+			a{
+				text-decoration: none;
+				color: #8d8d8d;
+				font-size: 14px;
+			}
+		}
+	}
+	.phone{
+		float: right;
+		margin-right: 86px;
+		margin-top: 14px;
+	}
+}
+
+#login{
+	@include wh(100%,650px);
+	background: #f0f0f0;
+	
+	.right{
+		position: relative;
+		@include wh(410px,560px);
+		background: white;
+		float: right;
+		margin-right: 40px;
+		margin-top: 30px;
+		h1{
+			font-size: 24px;
+			margin-top: 36px;
+			margin-left: 34px;
+		}
+		.er{
+			display: block;
+			@include wh(60px,60px);
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-right: 6px;
+			margin-top: 6px;
+			img{
+				@include wh(60px,60px);
+				vertical-align: top;
+			}
+		}
+		.sm{
+			@include wh(138px,26px);
+			border: 2px solid #f3d995;
+			font-size: 12px;
+			line-height: 26px;
+			text-align: center;
+			background: url(../img/icon-prevent.png) no-repeat 16px center;
+			padding-left: 15px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-right: 70px;
+			margin-top: 14px;
+		}
+		input{
+			@include wh(332px,48px);
+			display: block;
+			margin: 0 auto;
+			outline: 0;
+			border: 1px solid #d6d6d6;
+			padding-left: 16px;
+		}
+		.user{
+			margin-top: 36px;
+		}
+		.pwd{
+			margin-top: 14px;
+		}
+		.tishi{
+			@include wh(332px,48px);
+			margin: 0 auto;
+			margin-top: 14px;
+			background: url(../img/err.png) no-repeat left center;
+			line-height: 48px;
+			padding-left: 20px;
+			font-size: 14px;
+			color: red;
+			display: none;
+		}
+		
+		.btn .now{
+			display: block;
+			@include wh(352px,48px);
+			background: red;
+			color: white;
+			text-decoration: none;
+			line-height: 48px;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 14px;
+		}
+		.btn p{
+			font-size: 12px;
+			@include wh(352px,48px);
+			text-align: right;
+			margin: 0 auto;
+			line-height: 48px;
+			a{
+				color: #757575;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.footer{
+	p{
+		margin-top: 50px;
+		text-align: center;
+		font-size: 14px;
+	}
+	ul{
+		text-align: center;
+		width: 600px;
+		margin: 15px auto;
+		overflow :hidden;
+		li,span{
+			font-size: 14px;
+			float: left;
+			list-style: none;
+		}
+	}
+}

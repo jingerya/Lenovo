@@ -3,7 +3,76 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/registor.css"/>
 	</head>
 	<body>
+		<div id = 'banner'>
+			<img src="img/4879b596-0b39-4534-bcc8-a50693fe825e.jpg" >
+			<ul>
+				<li><a href="javascript:;">联想首页</a></li>
+				<li><a href="javascript:;">商城</a></li>
+				<li><a href="javascript:;">社区</a></li>
+				<li><a href="javascript:;">服务</a></li>
+				<li><a href="javascript:;">咨询</a></li>
+				<li><a href="javascript:;">门店</a></li>
+				<li><a href="javascript:;">手机版</a></li>
+			</ul>
+			<a href="javascript:;" class="phone">
+				<img src="img/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png" >
+			</a>
+		</div>
+		
+		<div id="main">
+			<div class="main_con">
+				<h1>注册联想会员</h1>
+				
+				<!-- 手机号 -->
+				<input type="text" class="call" placeholder="输入手机号" oninput="remove()">
+				
+				<!-- 滑块 -->
+				<div class="slide">
+					<div class="little">
+						
+					</div>
+					<span>请按住滑块，拖动到指定位置</span>
+					<div class="target">
+			
+					</div>
+				</div>
+				
+				
+				<!-- 验证码 -->
+				<div class="random">
+					<input type="text" class="left" placeholder="请输入右边的数字" oninput="remove()"/>
+					<div class="right">
+						<a href="javascript:;">获取验证码</a>
+					</div>
+				</div>
+				
+				<!-- 密码 -->
+				<input type="password" class="pwd" placeholder="请输入密码,密码长度为8-20位" oninput="remove()"/>
+				
+				<!-- 确认密码 -->
+				<input type="password" placeholder="请再次输入密码" class="again" oninput="remove()"/>
+				<div class="tishi"></div>
+				<div class="submit">
+					<a href="javascript:;">立即注册</a>
+				</div>
+				<div class="agree">注册账号即表示您同意并愿意遵守联想 <span>使用条款</span> 和 <span>隐私政策</span>
+				</div>
+				<div class="login">
+					<span>已有账号</span><a href="javascript:;">点此登录></a>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/regis.js"></script>
+		<script type="text/javascript">
+			function remove(){
+				$('.tishi').css('display','none');
+			}
+		</script>
 	</body>
 </html>

@@ -63,6 +63,7 @@ $('#nav ul li a').mouseleave(function(){
 				circleSlide();
 		 	})
 		 })
+		 
 		 function autoPlay(){
 		 	clearInterval(timer);
 		 	timer = setInterval(function(){
@@ -226,11 +227,19 @@ $.getJSON('json/littlepic.json',(data)=>{
 	$('#person-and-family #little-pic ul li').each(function(i){
 		let loca = null;
 		$(this).mouseenter(function(){
+			$('.pic ul').each(function(i){
+				$(this).eq(i).stop();
+			})
 			loca = $(this).children('a').children('span').children('img').attr('src');
 			$(this).children('a').children('span').children('img').attr('src','img/'+one[i]);
 			$(this).children('a').children('i').css('color','#395782');
 		level ++;
 		$('.pic ul').eq(i).css('z-index',level);
+		})
+		$('.pic ul li').mouseenter(function(){
+			$(this).css({
+				'cursor' : 'pointer'
+			});
 		})
 		$(this).mouseleave(function(){
 			$(this).children('a').children('span').children('img').attr('src',loca);
@@ -246,7 +255,14 @@ $.getJSON('json/littlepic.json',(data)=>{
 			$(this).children('a').children('i').css('color','#395782');
 			levelEn ++;
 			$('.en-pic ul').eq(i).css('z-index',levelEn);
+			
 		})
+		$('#enp .sel ul li').mouseenter(function(){
+			$(this).css({
+				'cursor' : 'pointer'
+			});
+		})
+		
 		$(this).mouseleave(function(){
 			$(this).children('a').children('span').children('img').attr('src',loca);
 			$(this).children('a').children('i').css('color','#616161');
@@ -262,9 +278,8 @@ $.getJSON('json/littlepic.json',(data)=>{
 			levelBig ++;
 			$('.bc-silde-img ul').eq(i).css('z-index',levelBig);
 		})
-		$('.bc-silde-img ul li').mouseenter(function(){
+		$('.en-pic ul li').mouseenter(function(){
 			$(this).css({
-				'shadow' : '#ccc 0px 10px10px',
 				'cursor' : 'pointer'
 			});
 		})
@@ -273,6 +288,28 @@ $.getJSON('json/littlepic.json',(data)=>{
 			$(this).children('a').children('i').css('color','#616161');
 		})
 	});
+	
+	// 
+	// let index = 0;
+	// autoPlay($('.pic ul'),6);
+	// function autoPlay(obj,len){
+	// 	clearInterval(obj.timer);
+	// 	obj.index = 0;
+	// 	obj.timer = setInterval(function(){
+	// 		// console.log(index);
+	// 		obj.eq(index).css('z-index',++obj.index);
+	// 		index ++;
+	// 		if(index == len-1){
+	// 			index = 0;
+	// 		}
+	// 	},1000)
+	// 	obj.mouseenter(function(){
+	// 		clearInterval(obj.timer);
+	// 	})
+	// 	obj.mouseleave(function(){
+	// 		autoPlay(obj,len);
+	// 	})
+	// }
 })
 
 

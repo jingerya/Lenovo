@@ -3,7 +3,57 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
 	<body>
+		<div id = 'banner'>
+			<img src="img/4879b596-0b39-4534-bcc8-a50693fe825e.jpg" >
+			<ul>
+				<li><a href="javascript:;">联想首页</a></li>
+				<li><a href="javascript:;">商城</a></li>
+				<li><a href="javascript:;">社区</a></li>
+				<li><a href="javascript:;">服务</a></li>
+				<li><a href="javascript:;">咨询</a></li>
+				<li><a href="javascript:;">门店</a></li>
+				<li><a href="javascript:;">手机版</a></li>
+			</ul>
+			<a href="javascript:;" class="phone">
+				<img src="img/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png" >
+			</a>
+		</div>
+		<div id = "login">
+			<div class="right">
+				<h1>联想会员登录</h1>
+				<a href="javascript:;" class="er">
+					<img src="img/qrcode.png" >
+				</a>
+				<p class="sm">扫码登录更安全</p>
+				<input type="text" placeholder="邮箱/手机号码" class="user" oninput="remove()">
+				<input type="password" placeholder="密码" class="pwd" oninput="remove()">
+				<div class="tishi">用户名或密码错误</div>
+				<div class="btn">
+					<a href="javascript:;" class="now">登录</a>
+					<p><a href="javascript:;">立即注册</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>版权所有：1998-2019 联想集团|法律公告|隐私权政策</p>
+			<ul>
+				<li>京ICP备11035381</li><span>|</span>
+				<li>京公网安备110108007970号</li><span>|</span>
+				<li>营业执照91110108700000458B
+			</ul>
+			
+		</div>
+		
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			function remove(){
+				$('.tishi').css('display','none');
+			}
+		</script>
 	</body>
 </html>
