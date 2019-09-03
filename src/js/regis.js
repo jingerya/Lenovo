@@ -87,7 +87,7 @@ $('.submit').click(function(){
 	
 	
 	//将用户名和密码存入cookie
-	let cookieStr = $.cookie('users');
+	let cookieStr = $.cookie('lenovo_lj_users');
 	let cookieObj = cookieStr === undefined ? {} : $.parseJSON(cookieStr);
 	if(flag){
 		if($call in cookieObj){
@@ -95,7 +95,7 @@ $('.submit').click(function(){
 			$('.tishi').html('用户名已存在！');
 		}else{
 			cookieObj[$call] = $pwd;
-			$.cookie('users',JSON.stringify(cookieObj),{
+			$.cookie('lenovo_lj_users',JSON.stringify(cookieObj),{
 				expires : 7
 			});
 			window.location = 'login.html';

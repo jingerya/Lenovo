@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$.getJSON("json/particular.json",function(c){for(var n=c.length,t=0;t<n;t++)$(".pic").append('<img src="img/'.concat(c[t],'">'))});

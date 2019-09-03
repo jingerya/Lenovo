@@ -27,12 +27,108 @@
 				line-height: 52px;
 				font-size: 14px;
 				font-weight: bold;
+				
 				a{
 					text-decoration: none;
 					color: #121212;
+					
 				}
+				.per-and-hou-nav{
+					display: none;
+					 height: 56px;
+					 width: 100%;
+					 background: #f2f2f2;
+					 position: absolute;
+					 left: 0;
+					 top: 52px;
+					.per-and-hou-nav-con{
+						width: 1250px;
+						margin: 0 auto;
+						ul{
+							.one{
+								border-bottom: 1px solid  #616161;
+							}
+							li{
+								text-align: center;
+								list-style: none;
+								float: left;
+								.per-and-hou{
+									 width: 100%;
+									 // height: 400px;
+									 background: white;
+									 position:absolute;
+									 z-index:2;
+									 display: none;
+									 top: 56px;
+									 left: 0;
+									.per-and-hou-con{
+										 width: 1200px;
+										 height: 330px;
+										 // background: black;
+										 margin: 0 auto;
+										 dl{
+											 float: left;
+											 width: 144px;
+											 height: 243px;
+											 border-left: 1px solid #666;
+											 margin-top: 44px;
+											 line-height: 32px;
+											
+											 dt{
+												 font-size: 18px;
+												 // font-weight: bold;
+												// text-align: center;
+												 margin-left: 26px;
+											 }
+											 dd{
+												background: url(../img/401df566-3f5d-4743-9362-01b370923aac.png) no-repeat left center;
+												 margin-left: 20px;
+												 font-size: 12px;
+												  width: 90px;
+												  height:40px;
+												  a{
+													 display: block;
+													 // padding-left: 20px;
+													 line-height: 40px;
+													 line-height: 20px;
+													 text-decoration: none;
+													 color: #999;
+													 padding-top: 10px;
+												  }
+											 }
+										 }
+									}
+								}
+								
+								a{
+									display: block;
+									width: 142px;
+									text-align: center;
+									margin: 0 auto;
+									text-decoration: none;
+									color: #616161;
+									
+									line-height:56px;
+									img,h6{
+										float: left;
+									}
+									img{
+										width: 24px;
+										height: 24px;
+										margin: 18px 10px 0 0;
+									}
+									h6{
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					} 
+				}
+				
 			}
 		}
+		
 		.search img{
 			float: left;
 			width: 18px;
@@ -62,90 +158,7 @@
 		}
 	}	 
 }
- .per-and-hou{
-	 width: 100%;
-	 // height: 400px;
-	 background: white;
-	 position:absolute;
-	 z-index:2;
-	 display: none;
-	 .per-and-hou-nav{
-		 height: 56px;
-		 width: 100%;
-		 background: #f2f2f2;
-		.per-and-hou-nav-con{
-			width: 1200px;
-			margin: 0 auto;
-			ul{
-				li{
-					list-style: none;
-					float: left;
-					a{
-						display: block;
-						width: 142px;
-						text-align: center;
-						margin: 0 auto;
-						text-decoration: none;
-						color: #616161;
-						
-						line-height:56px;
-						img,h6{
-							float: left;
-						}
-						img{
-							width: 24px;
-							height: 24px;
-							margin: 18px 10px 0 0;
-						}
-						h6{
-							font-size: 14px;
-						}
-					}
-				}
-			}
-		} 
-	 }
-	 .per-and-hou-con{
-		 width: 1200px;
-		 height: 330px;
-		 // background: black;
-		 margin: 0 auto;
-		 dl{
-			 float: left;
-			 width: 144px;
-			 height: 243px;
-			 border-left: 1px solid #666;
-			 margin-top: 44px;
-			 line-height: 32px;
-			 a{
-				 display: block;
-				 padding-left: 20px;
-				 // line-height: 40px;
-				 line-height: 20px;
-				 text-decoration: none;
-				 color: #666;
-				 padding-top: 10px;
-			 }
-			 dt{
-				 font-size: 18px;
-				 // font-weight: bold;
-				// text-align: center;
-				 margin-left: 26px;
-			 }
-			 dd{
-				background: url(../img/401df566-3f5d-4743-9362-01b370923aac.png) no-repeat left center;
-				 margin-left: 30px;
-				 font-size: 12px;
-				  width: 90px;
-				  height:40px;
-				  line-height:40px;
-				 // a{
-					//   padding-left: 20px;
-				 // }
-			 }
-		 }
-	 }
- }
+ 
 
 
 // banner图

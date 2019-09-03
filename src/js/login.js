@@ -7,11 +7,10 @@ $('.btn p a').click(function(){
 })
 
 $('.btn .now').click(function(){
-	let cookieStr = $.cookie('users');
+	let cookieStr = $.cookie('lenovo_lj_users');
 	let cookieObj = cookieStr === undefined ? {} : $.parseJSON(cookieStr);
 	let use = $('.user').val();
 	let pwd = $('.pwd').val();
-	console.log(use);
 	if(!(use in cookieObj)){
 		$('.tishi').css('display','block');
 		return;

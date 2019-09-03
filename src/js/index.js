@@ -1,16 +1,44 @@
 //导航栏的移入移出效果
-$('#nav ul li a').mouseenter(function(){
+$('#nav ul li').mouseenter(function(){
 	$(this).css({
 		'color' : '#395782',
 	});
+	//移入后，二级菜单出现
 	$('.per-and-hou').css('display','block');
+	$('.per-and-hou-nav').css('display','block');
+	
+	//改变border
+	$('.per-and-hou-nav-con ul li').each(function(i){
+		$(this).removeClass('one');
+		$(this).mouseenter(function(){
+			$(this).attr('class','one');
+			$('.per-and-hou').css('display','block');
+			$('.per-and-hou-nav').css('display','block');
+		})
+	})
 })
-$('#nav ul li a').mouseleave(function(){
+$('#nav ul li').mouseleave(function(){
 	$(this).css({
 		'color' : '',
 	})
 	$('.per-and-hou').css('display','none');
+	$('.per-and-hou-nav').css('display','none');
 })
+
+
+//注册登录跳转
+$('.login').click(function(){
+	location.href = 'login.html';
+})
+
+$('.registor').click(function(){
+	location.href = 'registor.html';
+})
+
+$('.list').click(function(){
+	location.href = 'list.html';
+})
+
 
 //banner轮播
 	$.getJSON('json/bigSlide.json',(data)=>{
