@@ -1,0 +1,144 @@
+@import 'public';
+*{
+	margin: 0;
+	padding: 0;
+}
+#head{
+	width: 100%;
+	height: 38px;
+	background: black;
+	.head_con{
+		width: 1200px;
+		margin: 0 auto;
+		text-align: right;
+		line-height: 38px;
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 12px;
+		}
+		span{
+			color: white;
+			margin: 0 10px;
+		}
+	}
+}
+#nav{
+	width: 100%;
+	height: 102px;
+	.nav_con{
+		width: 1200px;
+		height: 102px;
+		margin: 0 auto;
+		img{
+			margin-top: 30px;
+		}
+		img:nth-child(1){
+			float: left;
+		}
+		img:nth-child(2){
+			float: right;
+		}
+	}
+}
+
+#list{
+	width: 100%;
+	height: 38px;
+	// background: pink;
+	.list_con{
+		width: 1200px;
+		height: 36px;
+		border: 1px solid #d9d8d6;
+		margin: 0 auto;
+		line-height: 36px;
+		font-size: 14px;
+		dt{
+			text-align: center;
+			float: left;
+			@include wh(462px,36px);
+		}
+		dd{
+			text-align: center;
+			float: left;
+			@include wh(152px,36px);
+		}
+		dd:nth-child(1){
+			@include wh(163px,36px);
+		}
+		dd:nth-child(5){
+			@include wh(117px,36px);
+		}
+	}
+}
+#no{
+	display: none;
+	width: 100%;
+	height: 244px;
+	.no_con{
+		width: 1200px;
+		height: 244px;
+		margin: 0 auto;
+		i{
+			// margin-top: 82px;
+			// margin-left: 336px;
+			float: left;
+			width: 88px;
+			height: 82px;
+			background: url(../img/buycart.png) no-repeat -4px -66px;
+			margin: 82px 30px 0 336px;
+		}
+		h3{
+			line-height: 244px;
+			float: left;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		input{
+			float: left;
+			margin-top: 110px;
+			margin-left: 14px;
+			@include wh(95px,30px);
+			// border-radius: 5px;
+		}
+	}
+}
+
+#yes{
+	margin-top: 10px;
+	width: 100%;
+	height: 114px;
+	// background: pink;
+	.yes_con{
+		width: 1200px;
+		height: 114px;
+		// background: palegoldenrod;
+		margin: 0 auto;
+		border: 1px solid #d9d8d6;
+		dl{
+			text-align: center;
+			dt{
+				width: 57px;
+				height: 114px;
+				float: left;
+			}
+			img{
+				float: left;
+				width: 115px;
+				height: 115px;
+				display: block;
+				margin: 0 20px;
+			}
+			dd{
+				float: left;
+				@include wh(152px,114px);
+			}
+			dd:nth-of-type(1){
+				@include wh(257px,114px);
+			}
+			dd:nth-of-type(6){
+				@include wh(117px,114px);
+			}
+		}
+	}
+}

@@ -10,3 +10,439 @@
 		vertical-align: top;
 	}
 }
+
+#connect{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #dadada;
+	.connect_con{
+		width: 1200px;
+		height: 36px;
+		margin: 0 auto;
+		// background: pink;
+		p{
+			float: left;
+			font-size: 12px;
+			line-height: 36px;
+			color: #333333;
+			
+			a{
+				text-decoration: none;
+				color: #333333;
+			}
+		}
+		.kefu{
+			float: right;
+			width: 66px;
+			height: 24px;
+			// background: red;
+			margin-top: 6px;
+			border-radius: 3px;
+			background: url(../img/4467e513-fa34-4081-bbc3-05390e1196e3.png) no-repeat left center;
+			background-size: 100px 24px;
+			font-size: 12px;
+			color: white;
+			padding-left: 34px;
+			line-height: 24px;
+			text-decoration: none;
+		}
+	}
+}
+
+#z5{
+	height: 710px;
+	width: 100%;
+	// background: pink;
+	.z5_con{
+		height: 710px;
+		width: 1200px;
+		margin: 0 auto;
+		// background: palegoldenrod;
+		.zLeft{
+			width: 560px;
+			height: 710px;
+			// background: paleturquoise;
+			float: left;
+			.zLeft_top{
+				height: 520px;
+				width: 560px;
+				position: relative;
+				// background: palegreen;
+				img:nth-child(1){
+					z-index: 1;
+				}
+				img{
+					width: 540px;
+					height: 500px;
+					position: absolute;
+					left: 50%;
+					margin-left: -280px;
+					vertical-align: top;
+					// position: absolute;
+				}
+			}
+		}	
+			.zLeft_bottom{
+				height: 92px;
+				width: 560px;
+				a{
+					display: block;
+					float: left;
+					width: 84px;
+					height: 84px;
+					border: 1px solid #dcdcdc;
+					margin-left: 10px;
+					img{
+						vertical-align: top;
+						// margin-right: 20px;
+					}
+				}
+				.leftBtn{
+					width: 20px;
+					height: 84px;
+					background: url(../img/2a7f8349-14f0-42e1-afe8-7ae8afd54e1e.png) no-repeat left center #e4e4e4;
+					background-size: 16px 30px;
+					border: 0;
+				}
+				.rightBtn{
+					width: 20px;
+					height: 84px;
+					background: url(../img/cae7b801-0fe6-4691-ba99-239ba9d11576.png) no-repeat left center #e4e4e4;
+					float: right;
+					margin-right: 20px;
+					background-size: 16px 30px;
+					border: 0;
+				}
+			}
+			.footer{
+				height: 30px;
+				width: 560px;
+				// background: red;
+				p{
+					float: left;
+					font-size: 12px;
+					line-height: 30px;
+					color: #a5a5a5;
+				}
+				a{
+					float: right;
+					width: 50px;
+					height: 30px;
+					text-decoration: none;
+					font-size: 12px;
+					line-height: 30px;
+					color: #a5a5a5;
+					
+				}
+				.collect{
+						span{
+							margin-right: 4px;
+							float: left;
+							width: 11px;
+							height: 10px;
+							margin-top: 11px;
+							background: url(../img/small-icons.png) no-repeat -38px -44px;
+						}
+				}
+				.share{
+					span{
+						margin-right: 4px;
+						float: left;
+						width: 11px;
+						height: 10px;
+						margin-top: 11px;
+						background: url(../img/small-icons.png) no-repeat -56px -44px;
+				}
+			}
+		}
+		.zRight{
+			width: 640px;
+			height: 710px;
+			float: right;
+			// background: palevioletred;
+			h1{
+				margin-top: 40px;
+				font-size: 22px;
+				font-weight: normal;
+			}
+			p{
+				font-size: 12px;
+				color: #a2a2a2;
+				margin-top: 16px;
+			}
+			.seckill{
+				height: 32px;
+				width: 640px;
+				background: #e1140a;
+				margin-top: 30px;
+				color: white;
+				font-size: 12px;
+				line-height: 32px;
+				span{
+					margin-left: 14px;
+				}
+				i{
+					font-style: normal;
+					margin-left: 400px;
+				}
+			}
+			.mallPrice{
+				width: 640px;
+				height: 36px;
+				margin-top: 14px;
+				background: #f9f9f9;
+				span{
+					line-height: 36px;
+					font-size: 12px;
+					color: #434242;
+					margin-left: 6px;
+				}
+				b{
+					font-size: 20px;
+					color: #e1140a;
+					margin-left: 30px;
+				}
+				i{
+					color: #a5a5a5;
+					font-style: normal;
+					font-size: 12px;
+					text-decoration: line-through;
+					margin-left: 10px;
+				}
+				.act{
+					float: right;
+					margin-top: 0;
+					width: 92px;
+					height: 36px;
+					border-left: 1px solid #e0e0e0;
+					text-align: center;
+					em{
+						font-style: normal;
+						
+					}
+					a{
+						text-decoration: none;
+						color: #4a4a4a;
+					}
+				}
+			}
+			
+			.active{
+				height: 88px;
+				background: #f9f9f9;
+				width: 640px;
+				span{
+					font-size: 12px;
+					color: #434242;
+					margin-left: 6px;
+					float: left;
+				}
+				i{
+					float: left;
+					width: 18px;
+					height: 18px;
+					border: 1px solid #df3033;
+					color: #df3033;
+					font-style: normal;
+					font-size: 12px;
+					text-align: center;
+					line-height: 18px;
+					margin-left: 50px;
+				}
+				h6{
+					float: left;
+					margin-left: 16px;
+					font-weight: normal;
+					color: #df3033;
+				}
+			}
+			
+			.phoneColor{
+				width: 640px;
+				height: 105px;
+				overflow: hidden;
+				h6{
+					float: left;
+					font-size: 12px;
+					color: #434242;
+					font-weight: normal;
+				}
+				.species{
+					padding-left: 30px;
+					width: 550px;
+					height: 105px;
+					// background: pink;
+					float: right;
+					span{
+						float: left;
+						border: 1px solid #dadada;
+						font-size: 12px;
+						color: #434242;
+						text-align: center;
+						line-height: 25px;
+						margin-right:10px;
+						margin-bottom: 10px;
+					}
+					.five{
+						color: #e1140a;
+						border-color: #e1140a;
+					}
+					.spe_min{
+						width: 169px;
+						height: 25px;
+					}
+					.spe_mid{
+						width: 258px;
+						height: 25px;
+					}
+				}
+			}
+			
+			.phoneStorage{
+				@extend .phoneColor;
+				height: 35px;
+			}
+			
+			.server{
+				height: 60px;
+				h6{
+					float: left;
+					font-size: 12px;
+					color: #434242;
+					font-weight: normal;
+				}
+				.server_con{
+					padding-left: 30px;
+					width: 550px;
+					height: 60px;
+					float: right;
+					.ser_min{
+						float: left;
+						width: 258px;
+						height: 25px;
+						border: 1px solid #dadada;
+						margin-right: 10px;
+						margin-bottom: 10px;
+						font-size: 12px;
+						color: #434242;
+						line-height: 25px;
+						
+						span{
+							margin-left: 40px;
+						}
+						i{
+							margin-right: 20px;
+							margin-top: 8px;
+							float: right;
+							width: 8px;
+							height: 10px;
+							background: url(../img/arrow-group.png) no-repeat -50px -3px;
+						}
+					}
+				}
+			}
+			
+			.installment{
+				@extend .server ;
+				height: 26px;
+				margin-top: 12px;
+				.server_con{
+					height: 30px;
+					.ser_min{
+						width: 210px;
+						height: 23px;
+						span{
+							margin:0 4px;
+						}
+					}
+				} 
+			}
+			.num{
+				height: 60px;
+				h6{
+					float: left;
+					font-size: 12px;
+					color: #434242;
+					font-weight: normal;
+				}
+				.num_con{
+					width: 550px;
+					height: 60px;
+					float: right;
+					.minus,.plus{
+						float: left;
+						width: 20px;
+						height: 24px;
+						border: 1px solid #dadada;
+						margin-top: 0;
+						font-size: 26px;
+						line-height: 24px;
+						text-align: center;
+					}
+					.number{
+						float: left;
+						width: 50px;
+						height: 24px;
+						text-align: center;
+						line-height: 24px;
+						border-top: 1px solid #dadada;
+						border-bottom: 1px solid #dadada;
+					}
+					.buy{
+						width: 132px;
+						height: 38px;
+						background: #e1140a;
+						line-height: 38px;
+						text-align: center;
+						margin-top: 20px;
+						color: white;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.stick{
+	width: 100%;
+	height: 62px;
+	background: #f6f7f8;
+	.stick_con{
+		width: 1200px;
+		height: 62px;
+		margin: 0 auto;
+		h1{
+			font-size: 22px;
+			color: #4a4949;
+			line-height: 62px;
+			float: left;
+			font-weight: normal;
+		}
+		p{
+			float: right;
+			a{
+				float: left;
+				text-decoration: none;
+				line-height: 62px;
+				color: black;
+				font-size: 12px;
+				margin-left: 40px;
+			}
+			.trans{
+				color: #e2231a;
+			}
+			a:nth-child(4){
+				width: 78px;
+				height: 30px;
+				background: #e1140a;
+				margin-top: 14px;
+				line-height: 30px;
+				text-align: center;
+				color: white;
+			}
+		}
+	}
+	
+}
