@@ -4,6 +4,9 @@ $.getJSON('json/list.json',function(data){
 	for(let i = 0;i < len;i ++){
 		$('.pic').append(`<img src="img/${data[i]}" >`);
 	}
+	$('.pic img').eq(1).click(function(){
+		window.location = 'detail.html';
+	})
 })
 
 //侧边栏移入效果

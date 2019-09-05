@@ -56,6 +56,11 @@
 			margin: 0 auto;
 			margin-top: 14px;
 			position: relative;
+			.mark{
+				@include wh(0,48px);
+				position: absolute;
+				background: palegreen;
+			}
 			.little{
 				@include wh(48px,48px);
 				border: 1px solid #cccccc;

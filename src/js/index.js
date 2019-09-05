@@ -85,8 +85,8 @@ $('.list').click(function(){
 		 // 小图移入
 		 $('#banner dl dd').each(function(i){
 		 	$(this).mouseenter(function(){
-		 		index = i;
-		 		key = i;
+				index = i;
+				key = i;
 				slide();
 				circleSlide();
 		 	})
@@ -340,7 +340,9 @@ $.getJSON('json/littlepic.json',(data)=>{
 	// }
 })
 
-
-
+//购物车跳转
+$('.cart').click(function(){
+	window.location = 'cart.html';
+})
 
 

@@ -107,15 +107,22 @@
 #yes{
 	margin-top: 10px;
 	width: 100%;
-	height: 114px;
+	// height: 114px;
 	// background: pink;
 	.yes_con{
 		width: 1200px;
-		height: 114px;
+		// height: 114px;
 		// background: palegoldenrod;
 		margin: 0 auto;
 		border: 1px solid #d9d8d6;
 		dl{
+			overflow: hidden;
+			border-bottom: 1px solid #ccc;
+			a{
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
 			text-align: center;
 			dt{
 				width: 57px;
@@ -125,20 +132,146 @@
 			img{
 				float: left;
 				width: 115px;
-				height: 115px;
+				height: 114px;
 				display: block;
 				margin: 0 20px;
+				vertical-align: top;
 			}
 			dd{
 				float: left;
 				@include wh(152px,114px);
+				// line-height: 114px;
 			}
 			dd:nth-of-type(1){
-				@include wh(257px,114px);
+				padding-top: 20px;
+				@include wh(257px,94px);
+				text-align: left;
+				a:nth-of-type(2){
+					background: url(../img/lenovo_icon.jpg) no-repeat left center;
+					display: block;
+					@include wh(104px,16px);
+					padding-left: 16px;
+					color: #e2231a;
+				}
+			}
+			dd:nth-of-type(3),dd:nth-of-type(5){
+				line-height: 117px;
+			}
+			dd:nth-of-type(5){
+				color: #ef4e1a;
 			}
 			dd:nth-of-type(6){
-				@include wh(117px,114px);
+				padding-top: 30px;
+				@include wh(117px,84px);
+			}
+			dd:nth-of-type(4){
+				padding-top: 50px;
+				padding-left: 20px;
+				@include wh(132px,64px);
+				p{
+					float: left;
+					
+					@include wh(18px,18px);
+					background: #eeeeee;
+					border: 1px solid #d2d2d2;
+					text-align: center;
+				}
+				input{
+					float: left;
+					@include wh(54px,18px);
+					outline: 0;
+					border-top: 1px solid #d2d2d2;
+					border-bottom: 1px solid #d2d2d2;
+					text-align: center;
+				}
 			}
 		}
 	}
 }
+
+#slide{
+	@include  wh(100%,370px);
+	margin-top: 30px;
+	.slide_con{
+		@include wh(1200px,370px);
+		margin: 0 auto;
+		border: 1px solid #d9d8d6;
+		.slide_top{
+			@include wh(1200px,40px);
+			background: #eeeeee;
+			border-bottom: 1px solid #d9d8d6;
+			line-height: 40px;
+			font-size: 12px;
+			span{
+				color: #ff0000;
+				margin: 0 14px;
+			}
+		}
+		.slide_bottom{
+			@include wh(1200px,330px);
+			position: relative;
+			// background: palegreen;
+			.slide_bottom_left{
+				float: left;
+				@include wh(108px,35px);
+				// background: palegreen;
+				margin-top: 147px;
+				img{
+					vertical-align: top;
+					margin-left: 37px;
+				}
+			}
+			.slide_bottom_center{
+				overflow: hidden;
+				height: 330px;
+				ul{
+					overflow: hidden;
+					position: absolute;
+					left: 108px;
+					background: white; 
+					li{
+						list-style: none;
+						float: left;
+						@include wh(246px,330px);
+						// background: palegoldenrod;
+						img{
+							width: 216px;
+							height: 216px;
+							margin: 20px;
+						}
+						p{
+							@include wh(198px,40px);
+							font-size: 12px;
+							color: #0f0f0f;
+							padding: 0 22px 0 20px;
+						}
+						h6{
+							float: left;
+							color: #ff0000;
+							padding: 0 22px 0 20px;
+							width: 50px;
+							height: 30px;
+							line-height: 30px;
+						}
+						a{
+							float: left;
+							font-size: 12px;
+							text-decoration: none;
+						}
+					}
+				} 
+			}
+			.slide_bottom_right{
+				margin-top: 147px;
+				float: right;
+				@include wh(108px,35px);
+				// background: palegreen;
+				img{
+					vertical-align: top;
+					margin-left: 37px;
+				}
+			}
+		}
+	}
+}
+

@@ -316,8 +316,9 @@
 		margin: 0 auto;
 		overflow: hidden;
 		ul{
+			height: 392px;
 			transform-style: preserve-3d;
-			width: 1208px;
+			overflow: hidden;
 			position: absolute;
 			margin-top: 74px;
 			li{
@@ -352,11 +353,11 @@
 					text-align: center;
 				}
 			}
-			 li:hover{
-			 	transition: 0.3s;
-			 	transform: translateZ(-5px);
-			 	box-shadow: #CCCCCC 1px 5px 5px 3px;
-			 }
+			li:hover{
+				transition: 0.3s;
+				transform: translateZ(-5px);
+				box-shadow: #CCCCCC 1px 5px 5px 3px;
+			}
 		}
 		ul:nth-child(1){
 			z-index: 1;
@@ -502,7 +503,9 @@
 		overflow: hidden;
 		ul{
 			transform-style: preserve-3d;
-			width: 1208px;
+			// width: 1208px;
+			overflow: hidden;
+			height: 392px;
 			position: absolute;
 			margin-top: 74px;
 			li{
